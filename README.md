@@ -12,3 +12,6 @@ I would like to polish my skills without going into deep water.
 * HTML
 * Javascript - React
 * Vanilla CSS
+* Bundler - Parcel
+* Linter - ESLint
+* Code Formatter - Prettier
