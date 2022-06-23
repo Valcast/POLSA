@@ -4,6 +4,17 @@
 ***/
 
 /*
+   FONTS from Google Fonts
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,500;1,300&family=Roboto:wght@300;400&display=swap');
+
+:root {
+  --exo: 'Exo 2', sans-serif;
+  --roboto: 'Roboto', sans-serif;
+}
+
+/*
     Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
     - The "symbol *" part is to solve Firefox SVG sprite bug
  */

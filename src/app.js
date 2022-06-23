@@ -1,8 +1,9 @@
 import { render } from 'react-dom'
-
+import Home from './Homepage/Home'
+import './reset.css'
 
 const App = () => {
-  return <h1>Hello World</h1>
+  return <Home />
 }
 
 render(<App />, document.getElementById('root'))
