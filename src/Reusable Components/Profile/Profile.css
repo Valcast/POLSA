@@ -1,0 +1,33 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 80px;
+}
+
+.profilePicture {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 240px;
+  height: 240px;
+}
+
+.profileName {
+  font-size: 31px;
+  font-family: var(--roboto);
+  font-style: italic;
+  font-weight: 300;
+  padding: 20px 0;
+}
+
+.profileJob {
+  font-size: 19px;
+  font-family: var(--roboto);
+}
+
+.profileSocials {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 50px;
+}
