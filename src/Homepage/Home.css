@@ -1,5 +1,39 @@
 .home {
   width: 100vw;
   height: 100vh;
-  background-color: #303030;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.homeBackground {
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+  filter: brightness(75%);
+}
+
+.heroWrapper {
+  text-align: center;
+  padding-bottom: 200px;
+}
+
+.heroHeader {
+  font-family: var(--exo);
+  font-size: 72px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.heroDescription {
+  font-family: var(--roboto);
+  font-style: italic;
+  font-weight: 300;
+  max-width: fit-content;
+  padding-top: 40px;
+  line-height: 2;
 }

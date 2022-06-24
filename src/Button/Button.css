@@ -1,0 +1,15 @@
+button {
+  width: 320px;
+  height: 70px;
+  border: 1px solid white;
+  font-family: var(--exo);
+  font-weight: light;
+  text-align: center;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
