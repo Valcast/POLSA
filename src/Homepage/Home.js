@@ -5,7 +5,7 @@ import Button from '../Reusable Components/Button/Button'
 
 const Homepage = () => {
   return (
-    <main className='home'>
+    <div className='home'>
       <Navbar />
       <video className='homeBackground' autoPlay muted loop>
         <source
@@ -23,8 +23,8 @@ const Homepage = () => {
         />
       </div>
 
-      <Button text="Milestones"/>
-    </main>
+      <Button text='Milestones' />
+    </div>
   )
 }
 

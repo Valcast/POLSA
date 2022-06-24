@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className='MenuWrapper'>
         <MenuContainer>
           <MenuItem text='Home' />
-          <MenuItem text='About POLSA' />
+          <MenuItem path='about' text='About POLSA' />
           <MenuItem text='Events' />
           <MenuItem text='Contact' />
           <MenuItem text='Milestones' />

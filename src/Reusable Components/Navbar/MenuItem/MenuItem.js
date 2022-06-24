@@ -1,7 +1,12 @@
 import './MenuItem.css'
+import { Link } from 'react-router-dom'
 
-const MenuItem = ({ text }) => {
-  return <li className='MenuItem'>{text}</li>
+const MenuItem = ({ path = "", text }) => {
+  return (
+    <li className='MenuItem'>
+      <Link to={`/${path}`}>{text}</Link>
+    </li>
+  )
 }
 
 export default MenuItem
