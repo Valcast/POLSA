@@ -1,7 +1,7 @@
 import './Home.css'
-import Navbar from '../Navbar/Navbar'
-import Description from '../Description/Description'
-import Button from '../Button/Button'
+import Navbar from '../Reusable Components/Navbar/Navbar'
+import Description from '../Reusable Components/Description/Description'
+import Button from '../Reusable Components/Button/Button'
 
 const Homepage = () => {
   return (
