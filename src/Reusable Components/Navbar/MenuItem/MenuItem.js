@@ -1,11 +1,11 @@
 import './MenuItem.css'
 import { Link } from 'react-router-dom'
 
-const MenuItem = ({ path = "", text }) => {
+const MenuItem = ({ path = '', text }) => {
   return (
-    <li className='MenuItem'>
-      <Link to={`/${path}`}>{text}</Link>
-    </li>
+    <Link to={`/${path}`}>
+      <li className='MenuItem'>{text}</li>
+    </Link>
   )
 }
 

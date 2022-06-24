@@ -1,0 +1,30 @@
+.why {
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.whyHeader {
+  align-self: center;
+  padding-top: 80px;
+}
+
+.turningLine {
+  align-self: flex-start;
+}
+
+.reversed {
+  transform: rotate(180deg);
+  align-self: flex-end;
+}
+
+.whyDescription {
+  padding-top: 40px;
+  padding-bottom: 80px;
+  max-width: 100ch;
+  line-height: 2;
+  text-align: justify;
+}
