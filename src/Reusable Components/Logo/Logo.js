@@ -1,9 +1,9 @@
-const Logo = () => {
+const Logo = ({ width, height }) => {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
-      width='149.417'
-      height='57.024'
+      width={'149.417' | width}
+      height={'57.024' | height}
       viewBox='0 0 149.417 57.024'>
       <g id='Logo' transform='translate(293.59 -200.238)'>
         <g
