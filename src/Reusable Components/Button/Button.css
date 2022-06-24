@@ -5,11 +5,12 @@ button {
   font-family: var(--exo);
   font-weight: light;
   text-align: center;
-  transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s, transform 0.5s;
 }
 
 button:hover {
   cursor: pointer;
   background-color: white;
   color: black;
+  transform: translateY(-5px);
 }
