@@ -3,14 +3,14 @@ import InstagramIcon from '../SocialsIcons/InstagramIcon'
 import TwitterIcon from '../SocialsIcons/TwitterIcon'
 import './Profile.css'
 
-const Profile = (path, name) => {
+const Profile = ({ path, name, job }) => {
   return (
     <div className='profile'>
       <div className='profilePicture'>
         <img src={path} alt={name} />
       </div>
-      <div className='profileName'>[name]</div>
-      <div className='profileJob'>[job]</div>
+      <div className='profileName'>{name}</div>
+      <div className='profileJob'>{job}</div>
       <div className='profileSocials'>
         <FacebookIcon />
         <InstagramIcon />

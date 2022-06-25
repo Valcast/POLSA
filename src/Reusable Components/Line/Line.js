@@ -1,7 +1,7 @@
 import './Line.css'
 
-const Line = () => {
-  return <div className='line'></div>
+const Line = ({ className = '' }) => {
+  return <div className={`line ${className}`}></div>
 }
 
 export default Line

@@ -1,5 +1,6 @@
 import Navbar from '../Reusable Components/Navbar/Navbar'
 import './About.css'
+import Events from './Events/Events'
 import OurTeam from './OurTeam/OurTeam'
 import Who from './Who/Who'
 import Why from './Why/Why'
@@ -11,6 +12,7 @@ const About = () => {
       <Who />
       <Why />
       <OurTeam />
+      <Events />
     </div>
   )
 }

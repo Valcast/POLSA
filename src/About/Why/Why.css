@@ -27,4 +27,5 @@
   max-width: 100ch;
   line-height: 2;
   text-align: justify;
+  font-family: var(--roboto);
 }

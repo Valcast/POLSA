@@ -4,3 +4,8 @@
   height: 60%;
   margin: 0 40px;
 }
+
+.horizontal {
+  width: 1px;
+  transform: rotate(90deg);
+}
