@@ -1,0 +1,38 @@
+.donate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 40px;
+  padding-top: 80px;
+}
+
+.turningLines {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
+  width: 100%;
+}
+
+.turningLines .reversed {
+  transform: scale(-1, 1);
+}
+
+.paymentMethods {
+  display: flex;
+  align-items: center;
+}
+
+.donateHeader {
+  align-self: center;
+}
+
+.donateDescription {
+  max-width: 100ch;
+  text-align: center;
+}
+
+.paymentMethods > * {
+  margin-left: 20px;
+}
