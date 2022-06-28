@@ -1,0 +1,49 @@
+.footer {
+  background-color: #0a0a0a;
+  height: 280px;
+  margin-top: 80px;
+  padding: 40px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--exo);
+}
+
+.footerFaq {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footerFaqButtons {
+  display: flex;
+  gap: 20px;
+}
+
+.footerMenu {
+  display: flex;
+  align-items: center;
+}
+
+.footerMenuNav {
+  display: block;
+}
+
+.footerMenuItem {
+  padding-top: 10px;
+}
+
+.footerMenuItem:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.footerSocial {
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.footerSocialName {
+  padding-left: 20px;
+}

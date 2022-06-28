@@ -5,6 +5,7 @@ import OurTeam from './OurTeam/OurTeam'
 import Who from './Who/Who'
 import Why from './Why/Why'
 import Donate from './Donate/Donate'
+import Footer from '../Reusable Components/Footer/Footer'
 
 const About = () => {
   return (
@@ -15,6 +16,7 @@ const About = () => {
       <OurTeam />
       <Events />
       <Donate />
+      <Footer />
     </div>
   )
 }
