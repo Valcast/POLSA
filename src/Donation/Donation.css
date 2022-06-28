@@ -1,0 +1,72 @@
+.donation {
+  background-color: black;
+  color: white;
+  padding-top: 240px;
+  overflow: hidden;
+}
+
+.donationHeader {
+  font-family: var(--exo);
+}
+
+.donationDescription {
+  line-height: 1.5;
+  max-width: 100ch;
+  font-family: var(--roboto);
+}
+
+.donationOtherDescription {
+  max-width: 150ch;
+  line-height: 1.5;
+  font-family: var(--roboto);
+}
+.donationProcess {
+  display: flex;
+  padding: 0 40px;
+}
+
+.donationTurningLine {
+  transform: translateX(-750px);
+}
+
+.donationTurningLineReversed {
+  transform: scale(-1, 1) translateX(-150px);
+}
+
+.donationProcessLine {
+  width: 1px;
+  height: 50vh;
+  background-color: white;
+}
+
+.donationAmount,
+.donationPayment,
+.donationOther {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.donationAmountOther {
+  border: 1px solid white;
+  width: 100%;
+  padding: 20px 20px;
+  font-family: var(--exo);
+}
+
+.invalid {
+  border: 1px solid red;
+}
+
+.donationAmountButtons,
+.donationOtherButtons,
+.donationPaymentButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.donationOther {
+  padding-left: 40px;
+  padding-top: 80px;
+}

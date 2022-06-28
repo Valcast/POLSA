@@ -29,7 +29,7 @@ const Donate = () => {
         <AmericanExpress />
         <Bitcoin />
       </div>
-      <Button text='Donate' />
+      <Button to='donate' text='Donate' />
     </div>
   )
 }
