@@ -3,7 +3,9 @@ import Header from '../../Reusable Components/Header/Header'
 import Description from '../../Reusable Components/Description/Description'
 import './Mars.css'
 import marsHero from '../../images/marsHero.png'
+import Mission from '../../Reusable Components/Mission/Mission'
 import Next from '../../Reusable Components/Next/Next'
+import marsVideo from '../../images/marsVideo.png'
 
 const Mars = () => {
   return (
@@ -24,6 +26,7 @@ const Mars = () => {
         />
         <Next text='First Commercial Flight' />
       </div>
+      <Mission imgPath={marsVideo} alt='marsVideo' />
     </div>
   )
 }
