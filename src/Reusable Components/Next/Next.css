@@ -1,0 +1,29 @@
+.next {
+  position: absolute;
+  margin: 0 40px;
+  display: flex;
+  gap: 20px;
+  color: white;
+  align-items: center;
+  font-family: var(--exo);
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 2;
+}
+
+.next > svg {
+  transition: transform 0.5s;
+}
+
+.next:hover > svg {
+  transform: translateX(-5px);
+}
+
+.right {
+  right: 0;
+  flex-direction: row-reverse;
+}
+
+.right > svg {
+  transform: rotate(180deg);
+}

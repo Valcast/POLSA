@@ -14,8 +14,8 @@ const Navbar = () => {
         <MenuContainer>
           <MenuItem text='Home' />
           <MenuItem path='about' text='About POLSA' />
-          <MenuItem text='Events' />
-          <MenuItem text='Contact' />
+          <MenuItem path='mars ' text='Events' />
+          <MenuItem path='donate' text='Contact' />
           <MenuItem text='Milestones' />
         </MenuContainer>
         <Search />
