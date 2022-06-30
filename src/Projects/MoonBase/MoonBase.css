@@ -22,6 +22,7 @@
 .moonHeroDescription {
   max-width: 120ch;
   line-height: 1.5;
+  font-family: var(--roboto);
 }
 
 .moon .moonHeroBackground {

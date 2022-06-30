@@ -27,7 +27,7 @@ const Mars = () => {
           className='marsHeroDescription'
           text={`Praesent et urna erat. Quisque imperdiet scelerisque purus  interdum euismod. \n Morbi mi massa, congue eget pulvinar nec, pulvinar non purus.`}
         />
-        <Next text='First Commercial Flight' />
+        <Next path='flight' text='First Commercial Flight' />
       </div>
       <Mission imgPath={marsVideo} alt='marsVideo' />
       <div className='marsRocket'>
@@ -44,7 +44,7 @@ const Mars = () => {
         />
       </div>
       <Donate />
-      <Footer className='marsFooter'/>
+      <Footer className='marsFooter' />
     </div>
   )
 }

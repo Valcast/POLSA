@@ -1,0 +1,41 @@
+.flight {
+  color: white;
+  overflow: hidden;
+  background-color: #0f172e;
+}
+
+.flightHero {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.flightHeroHeader {
+  position: absolute;
+  top: 42%;
+  left: 37%;
+  transform: translateY(-42%);
+}
+
+.flightHeroDescription {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-60%);
+  font-family: var(--roboto);
+  left: 36%;
+  text-indent: 5px;
+  max-width: 90ch;
+  line-height: 1.5;
+}
+
+.flightHeroBackground {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  filter: brightness(50%);
+}
+
+.flightFooter {
+  background-color: #152450;
+}
