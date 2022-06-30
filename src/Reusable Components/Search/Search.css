@@ -10,6 +10,7 @@
   display: flex;
   align-items: center;
   margin-left: 20px;
+  position: relative;
 }
 
 .searchInput:placeholder-shown {
@@ -23,4 +24,27 @@
 .searchInput:focus {
   border: none;
   padding-bottom: 0px;
+}
+
+.searchInput:not(:placeholder-shown) + .searchItemList {
+  display: flex;
+}
+
+.searchItemList {
+  display: none;
+  flex-direction: column;
+  font-family: var(--exo);
+  position: absolute;
+  top: 110%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.292);
+}
+
+.searchItem {
+  padding: 10px 10px;
+  transition: background-color 0.5s;
+}
+
+.searchItem:hover {
+  background-color: black;
 }

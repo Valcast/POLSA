@@ -1,6 +1,18 @@
 import './Search.css'
+import routes from './routes.json'
+import { Link } from 'react-router-dom'
+import { useState } from 'react'
 
 const Search = () => {
+  let [filteredRoutes = [], setFilteredRoutes] = useState()
+
+  const keyupHandler = e => {
+    let temp = routes.filter(route =>
+      route[0].toLowerCase().includes(e.target.value.toLowerCase())
+    )
+    setFilteredRoutes(temp)
+  }
+
   return (
     <div className='Search'>
       <svg
@@ -18,7 +30,18 @@ const Search = () => {
           strokeWidth='1'
         />
       </svg>
-      <input className='searchInput' placeholder='Search...'></input>
+      <input
+        className='searchInput'
+        type='search'
+        placeholder='Search...'
+        onKeyUp={keyupHandler}></input>
+      <div className='searchItemList'>
+        {filteredRoutes.map(route => (
+          <Link className='searchItem' to={`/${route[1]}`} key={route[1]}>
+            {route[0]}
+          </Link>
+        ))}
+      </div>
     </div>
   )
 }
