@@ -1,0 +1,33 @@
+.moon {
+  color: white;
+  overflow: hidden;
+  background-color: #070502;
+}
+
+.moonHero {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 140px 0;
+  align-items: center;
+}
+
+.moonHeroHeader {
+  align-self: center;
+}
+
+.moonHeroDescription {
+  max-width: 120ch;
+  line-height: 1.5;
+}
+
+.moon .moonHeroBackground {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  filter: brightness(50%);
+}

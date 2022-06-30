@@ -6,6 +6,7 @@ import About from './About/About'
 import './reset.css'
 import Donation from './Donation/Donation'
 import Mars from './Projects/Mars/Mars'
+import MoonBase from './Projects/MoonBase/MoonBase'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path='/donate' element={<Donation />}></Route>
         <Route path='/' element={<Home />}></Route>
         <Route path='/mars' element={<Mars />}></Route>
+        <Route path='/moonBase' element={<MoonBase />}></Route>
       </Routes>
     </BrowserRouter>
   )
