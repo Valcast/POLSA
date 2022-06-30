@@ -9,6 +9,7 @@
   top: 50%;
   transform: translateY(-50%);
   line-height: 2;
+  z-index: 1;
 }
 
 .next > svg {
@@ -26,4 +27,8 @@
 
 .right > svg {
   transform: rotate(180deg);
+}
+
+.right:hover > svg {
+  transform: translateX(5px) rotate(180deg);
 }

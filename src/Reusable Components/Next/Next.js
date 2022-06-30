@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom'
 import './Next.css'
 
-const Next = ({ right = false, text }) => {
+const Next = ({ right = false, text, path }) => {
   return (
-    <Link to='/' className={`next ${right ? 'right' : ''}`}>
+    <Link to={`/${path}`} className={`next ${right ? 'right' : ''}`}>
       <svg
         xmlns='http://www.w3.org/2000/svg'
         width='15.281'
