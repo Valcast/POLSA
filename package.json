@@ -2,11 +2,12 @@
   "name": "react",
   "version": "1.0.0",
   "description": "",
+  "main": "app.js",
   "scripts": {
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "format:check": "prettier --check \"src/**/*.{js,jsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
-    "dev": "parcel src/index.html",
+    "dev": "parcel --port 1234 --hmr-port 1236 src/index.html",
     "build": "parcel build src/index.html --dist-dir dist"
   },
   "keywords": [],
