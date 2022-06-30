@@ -15,6 +15,9 @@
   gap: 20px;
 }
 
+.footerFaqDescription {
+  font-family: var(--roboto);
+}
 .footerFaqButtons {
   display: flex;
   gap: 20px;
@@ -31,6 +34,9 @@
 
 .footerMenuItem {
   padding-top: 10px;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 14px;
 }
 
 .footerMenuItem:hover {

@@ -11,7 +11,7 @@ const Footer = ({ className = '' }) => {
     <div className={`footer ${className}`}>
       <div className='footerFaq'>
         <p>Do you want to ask something?</p>
-        <p>Check FAQ for frequently asked questions or send us an message</p>
+        <p className='footerFaqDescription'>Check FAQ for frequently asked questions or send us an message</p>
         <div className='footerFaqButtons'>
           <Button text='FAQ' />
           <Button text='Contact' />
