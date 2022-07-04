@@ -3,7 +3,6 @@
   height: 280px;
   margin-top: 80px;
   padding: 40px;
-  color: white;
   display: flex;
   justify-content: space-between;
   font-family: var(--exo);
@@ -24,8 +23,13 @@
 }
 
 .footerMenu {
+  height: fit-content;
   display: flex;
   align-items: center;
+}
+
+.line {
+  height: 80px;
 }
 
 .footerMenuNav {

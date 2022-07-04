@@ -1,6 +1,5 @@
 .mars {
   background-color: #322217;
-  color: white;
   overflow: hidden;
 }
 
@@ -46,28 +45,30 @@
 }
 
 .marsRocket {
-  padding: 80px 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-top: 120px;
+  padding: 0 10vw;
   overflow: hidden;
 }
 
-.marsLine {
-  transform: scale(-1, 1) translateX(-105%);
+.marsHeader {
+  padding-top: 20px;
 }
 
-.marsHeader {
-  align-self: flex-end;
-  padding-top: 20px;
+.marsLine {
+  transform: translateX(-95%);
 }
 
 .marsDescription {
   padding: 40px 0;
   font-family: var(--roboto);
+  text-align: justify;
   line-height: 1.5;
 }
 
 .marsFooter {
   background-color: #472f1f;
+}
+
+.rocketSVG {
+  width: 100%;
 }

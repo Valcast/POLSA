@@ -1,9 +1,12 @@
 import Header from '../../Reusable Components/Header/Header'
 import './Events.css'
 import Description from '../../Reusable Components/Description/Description'
-import falcon9 from '../../images/falcon9.png'
-import geosatellite from '../../images/geosatellite.png'
+import falcon9 from '../../images/falcon9.jpg'
+import falcon9Webp from '../../images/falcon9.webp'
+import geosatellite from '../../images/geosatellite.jpg'
+import geosatelliteWebp from '../../images/geosatellite.webp'
 import Button from '../../Reusable Components/Button/Button'
+import Image from '../../Reusable Components/Image/Image'
 
 const Events = () => {
   return (
@@ -11,7 +14,7 @@ const Events = () => {
       <Header className='eventsHeader' text='Check our newest projects' />
       <div className='eventsRecent'>
         <div className='eventsRecentProject'>
-          <img src={falcon9} alt='img' />
+          <Image src={falcon9} srcWebp={falcon9Webp} alt='Falcon 9' />
           <div className='eventsRecentProjectText'>
             <Header
               className='eventsRecentProjectTextHeader'
@@ -25,7 +28,11 @@ const Events = () => {
           </div>
         </div>
         <div className='eventsRecentProject'>
-          <img src={geosatellite} alt='img' />
+          <Image
+            src={geosatellite}
+            srcWebp={geosatelliteWebp}
+            alt='Geo Satelitte'
+          />
           <div className='eventsRecentProjectText'>
             <Header
               className='eventsRecentProjectTextHeader'

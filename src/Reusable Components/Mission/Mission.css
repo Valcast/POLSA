@@ -1,9 +1,10 @@
 .mission {
-  color: white;
-  margin-top: 80px;
-  overflow: hidden;
-  padding: 0 300px;
-  width: 100vw;
+  margin-top: 120px;
+  padding: 0 10vw;
+}
+
+.missionImage {
+  width: 100%;
 }
 
 .missionLine {
@@ -16,6 +17,7 @@
 
 .missionDescription {
   font-family: var(--roboto);
+  text-align: justify;
   padding: 40px 0;
   line-height: 1.5;
 }

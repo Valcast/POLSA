@@ -1,4 +1,5 @@
-import moonHero from '../../images/moonBaseHero.png'
+import moonHero from '../../images/moonBaseHero.jpg'
+import moonHeroWebp from '../../images/moonBaseHero.jpg'
 import Description from '../../Reusable Components/Description/Description'
 import Header from '../../Reusable Components/Header/Header'
 import Navbar from '../../Reusable Components/Navbar/Navbar'
@@ -7,16 +8,19 @@ import Mission from '../../Reusable Components/Mission/Mission'
 import moonBaseVideo from '../../images/moonBaseVideo.png'
 import Footer from '../../Reusable Components/Footer/Footer'
 import Donate from '../../About/Donate/Donate'
+import Image from '../../Reusable Components/Image/Image'
 import './MoonBase.css'
 
 const MoonBase = () => {
   return (
     <div className='moon'>
       <Navbar />
-      <img
-        className='moonHeroBackground'
+      <Image
         src={moonHero}
-        alt='moonBackground'></img>
+        srcWebp={moonHeroWebp}
+        alt='Flight Hero Backgroud'
+        className='moonHeroBackground'
+      />
       <Next path='firstHuman' text='Our First Human In Space' />
       <Next path='flight' right text='First Commercial Flight' />
       <div className='moonHero'>

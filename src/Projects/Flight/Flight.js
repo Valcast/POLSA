@@ -2,20 +2,23 @@ import Footer from '../../Reusable Components/Footer/Footer'
 import Mission from '../../Reusable Components/Mission/Mission'
 import Navbar from '../../Reusable Components/Navbar/Navbar'
 import flightVideo from '../../images/flightVideo.png'
-import flightHero from '../../images/flightHero.png'
+import flightHero from '../../images/flightHero.jpg'
+import flightHeroWebp from '../../images/flightHero.webp'
 import Next from '../../Reusable Components/Next/Next'
 import Header from '../../Reusable Components/Header/Header'
 import Description from '../../Reusable Components/Description/Description'
 import './Flight.css'
+import Image from '../../Reusable Components/Image/Image'
 const Flight = () => {
   return (
     <div className='flight'>
       <Navbar />
-      <img
-        className='flightHeroBackground'
+      <Image
         src={flightHero}
-        alt='flightBackground'></img>
-      <Next path='moonBase' text='Creating Moon Base' />
+        srcWebp={flightHeroWebp}
+        alt='Flight Hero Backgroud'
+        className='flightHeroBackground'
+      />
       <Next path='mars' right text='Landing On Mars' />
       <div className='flightHero'>
         <Header className='flightHeroHeader' text='TO THE STARS' />
