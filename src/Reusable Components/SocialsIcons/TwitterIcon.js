@@ -2,7 +2,7 @@ const TwitterIcon = () => {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
-      width='24.227'
+      width='20.35'
       height='19.677'
       viewBox='0 0 24.227 19.677'>
       <path

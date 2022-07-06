@@ -6,11 +6,10 @@ import './OurTeam.css'
 import pfp1 from '../../images/jimcarrey.png'
 import pfp2 from '../../images/jasminesparrow.png'
 import pfp3 from '../../images/jackdaniels.png'
-import Line from '../../Reusable Components/Line/Line'
 
 const OurTeam = () => {
   return (
-    <div className='ourTeam'>
+    <section className='ourTeam'>
       <Header className='ourTeamHeader' text='Creators' />
       <Description
         className='ourTeamDescription'
@@ -21,8 +20,7 @@ const OurTeam = () => {
         <Profile path={pfp2} name='Jasmine Sparrow' job='Head Scientist' />
         <Profile path={pfp3} name='Jack Daniels' job='Marketing Expert' />
       </div>
-      <Line className='horizontal' />
-    </div>
+    </section>
   )
 }
 

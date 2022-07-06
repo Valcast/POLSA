@@ -35,9 +35,8 @@
   flex-direction: column;
   font-family: var(--exo);
   position: absolute;
-  top: 110%;
+  top: 150%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.292);
 }
 
 .searchItem {
@@ -47,4 +46,8 @@
 
 .searchItem:hover {
   background-color: black;
+}
+
+.searchInput::-webkit-search-cancel-button {
+  appearance: none;
 }

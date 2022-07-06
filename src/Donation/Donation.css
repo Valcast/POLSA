@@ -12,16 +12,13 @@
   line-height: 1.5;
   max-width: 100ch;
   font-family: var(--roboto);
+  font-size: 12px;
 }
 
-.donationOtherDescription {
-  max-width: 150ch;
-  line-height: 1.5;
-  font-family: var(--roboto);
-}
 .donationProcess {
   display: flex;
   padding: 0 40px;
+  gap: 120px;
 }
 
 .donationTurningLine {
@@ -30,12 +27,6 @@
 
 .donationTurningLineReversed {
   transform: scale(-1, 1) translateX(-150px);
-}
-
-.donationProcessLine {
-  width: 1px;
-  height: 50vh;
-  background-color: white;
 }
 
 .donationAmount,
@@ -48,7 +39,7 @@
 
 .donationAmountOther {
   border: 1px solid white;
-  width: 100%;
+  width: 660px;
   padding: 20px 20px;
   font-family: var(--exo);
 }

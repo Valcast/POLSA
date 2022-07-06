@@ -10,7 +10,7 @@ import Image from '../../Reusable Components/Image/Image'
 
 const Events = () => {
   return (
-    <div className='events'>
+    <section className='events'>
       <Header className='eventsHeader' text='Check our newest projects' />
       <div className='eventsRecent'>
         <div className='eventsRecentProject'>
@@ -47,7 +47,7 @@ const Events = () => {
         </div>
       </div>
       <div className='eventsOther'></div>
-    </div>
+    </section>
   )
 }
 

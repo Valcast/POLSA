@@ -8,7 +8,7 @@ import './Navbar.css'
 
 const Navbar = () => {
   return (
-    <nav>
+    <div className='navbar'>
       <Logo />
       <div className='MenuWrapper'>
         <MenuContainer>
@@ -21,7 +21,7 @@ const Navbar = () => {
         <Search />
         <LanguageMode />
       </div>
-    </nav>
+    </div>
   )
 }
 

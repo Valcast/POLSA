@@ -1,4 +1,4 @@
-nav {
+.navbar {
   padding: 20px 40px;
   display: flex;
   justify-content: space-between;
@@ -6,9 +6,4 @@ nav {
   position: fixed;
   top: 0;
   z-index: 1;
-}
-
-.MenuWrapper {
-  display: flex;
-  align-items: center;
 }

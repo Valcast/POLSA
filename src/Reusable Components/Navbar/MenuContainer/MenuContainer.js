@@ -1,7 +1,11 @@
 import './MenuContainer.css'
 
 const MenuContainer = ({ children }) => {
-  return <ul>{children}</ul>
+  return (
+    <nav>
+      <menu className='MenuWrapper'>{children}</menu>
+    </nav>
+  )
 }
 
 export default MenuContainer

@@ -10,7 +10,7 @@ import marsVideo from '../../images/marsVideo.jpg'
 import marsVideoWebp from '../../images/marsVideo.webp'
 import RocketSVG from './RocketSVG'
 import TurningLine from '../../Reusable Components/TurningLine/TurningLine'
-import Donate from '../../About/Donate/Donate'
+import Donate from '../../Reusable Components/Donate/Donate'
 import Footer from '../../Reusable Components/Footer/Footer'
 import Image from '../../Reusable Components/Image/Image'
 const Mars = () => {
@@ -39,7 +39,7 @@ const Mars = () => {
         imagePathWebp={marsVideoWebp}
         alt='marsVideo'
       />
-      <div className='marsRocket'>
+      <section className='marsRocket'>
         <TurningLine classname='marsLine' />
         <Header className='marsHeader' text='Brand New Rocket' />
         <Description
@@ -51,7 +51,7 @@ const Mars = () => {
           className='marsDescription'
           text='Praesent et urna erat. Quisque imperdiet scelerisque purus interdum euismod. Morbi mi massa, congue eget pulvinar nec, pulvinar non purus. Aenean accumsan, diam ut egestas congue, urna diam tristique dolor, eu varius nisl erat sed mauris. Aliquam a euismod erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.'
         />
-      </div>
+      </section>
       <Donate />
       <Footer className='marsFooter' />
     </div>

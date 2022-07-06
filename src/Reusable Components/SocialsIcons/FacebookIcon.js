@@ -2,7 +2,7 @@ const FacebookIcon = () => {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
-      width='12.976'
+      width='20.35'
       height='24.227'
       viewBox='0 0 12.976 24.227'>
       <path

@@ -2,7 +2,7 @@ const InstagramIcon = () => {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
-      width='21.21'
+      width='20.35'
       height='21.206'
       viewBox='0 0 21.21 21.206'>
       <path

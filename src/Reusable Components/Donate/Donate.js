@@ -1,16 +1,16 @@
-import Button from '../../Reusable Components/Button/Button'
-import Description from '../../Reusable Components/Description/Description'
-import Header from '../../Reusable Components/Header/Header'
-import AmericanExpress from '../../Reusable Components/PaymentIcons/AmericanExpress'
-import Bitcoin from '../../Reusable Components/PaymentIcons/Bitcoin'
-import Paypal from '../../Reusable Components/PaymentIcons/Paypal'
-import Visa from '../../Reusable Components/PaymentIcons/Visa'
-import TurningLine from '../../Reusable Components/TurningLine/TurningLine'
+import Button from '../Button/Button'
+import Description from '../Description/Description'
+import Header from '../Header/Header'
+import AmericanExpress from '../PaymentIcons/AmericanExpress'
+import Bitcoin from '../PaymentIcons/Bitcoin'
+import Paypal from '../PaymentIcons/Paypal'
+import Visa from '../PaymentIcons/Visa'
+import TurningLine from '../TurningLine/TurningLine'
 import './Donate.css'
 
 const Donate = () => {
   return (
-    <div className='donate'>
+    <section className='donate'>
       <div className='turningLines'>
         <TurningLine />
         <TurningLine classname='reversed' />
@@ -30,7 +30,7 @@ const Donate = () => {
         <Bitcoin />
       </div>
       <Button to='donate' text='Donate' />
-    </div>
+    </section>
   )
 }
 

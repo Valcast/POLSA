@@ -1,6 +1,5 @@
 import Description from '../../Reusable Components/Description/Description'
 import Button from '../../Reusable Components/Button/Button'
-import Line from '../../Reusable Components/Line/Line'
 import Logo from '../../Reusable Components/Logo/Logo'
 import './Who.css'
 
@@ -16,7 +15,6 @@ const Who = () => {
         />
         <Button text='Explore' />
       </div>
-      <Line />
       <Logo width={637} height={243} />
     </section>
   )

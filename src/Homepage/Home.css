@@ -35,7 +35,7 @@
   font-family: var(--roboto);
   font-style: italic;
   font-weight: 300;
-  max-width: fit-content;
+  max-width: 100ch;
   padding-top: 40px;
   line-height: 2;
 }
