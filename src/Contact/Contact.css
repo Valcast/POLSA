@@ -1,0 +1,129 @@
+.contactPage {
+  min-height: 100vh;
+  background-color: black;
+  overflow: hidden;
+}
+
+.contactPageSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 120px 40px 0px 40px;
+  gap: 80px;
+}
+
+.contactPageTurningLine {
+  transform: translateX(-790px);
+}
+
+.contactPageHeader {
+  padding-top: 20px;
+}
+
+.contactPageDescription {
+  max-width: 120ch;
+  font-family: var(--roboto);
+  line-height: 1.5;
+  padding-top: 40px;
+}
+
+.contactForm {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.contactFormData {
+  display: flex;
+  gap: 40px;
+}
+
+.contactFormDataInput,
+.contactFormDataButton,
+.contactFormDataText {
+  border: 1px solid white;
+  padding-left: 20px;
+  font-family: var(--roboto);
+}
+
+.contactFormDataInput,
+.contactFormDataButton {
+  width: 320px;
+  height: 70px;
+}
+
+.contactFormDataButton {
+  text-align: center;
+  padding-left: 0;
+  transition: background-color 0.5s, color 0.5s, transform 0.5s;
+}
+
+.contactFormDataButton:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  transform: translateY(-5px);
+}
+
+.contactFormDataText {
+  max-width: 1150px;
+  width: 100%;
+  height: 200px;
+  padding-top: 20px;
+}
+
+.contactLine {
+  min-width: 1px;
+  background-color: #fff;
+  height: 500px;
+}
+
+.contactInformation {
+  padding-right: 200px;
+  position: relative;
+}
+
+.contactInformationAddresses {
+  padding-top: 40px;
+}
+
+.contactInformationAddressesList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contactInformationAddress {
+  font-family: var(--exo);
+  display: flex;
+  align-items: center;
+}
+
+.contactInformationAddress span {
+  font-size: 12px;
+  padding-right: 10px;
+}
+
+.contactInformationLine {
+  height: 1px;
+  width: 40%;
+  background-color: white;
+  margin: 40px 0;
+}
+
+.contactSocials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.contactSocial {
+  display: flex;
+  align-items: center;
+}
+
+.contactSocial span {
+  padding-left: 10px;
+  font-family: var(--exo);
+}

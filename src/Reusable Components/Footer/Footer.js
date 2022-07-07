@@ -6,7 +6,7 @@ import InstagramIcon from '../SocialsIcons/InstagramIcon'
 import TwitterIcon from '../SocialsIcons/TwitterIcon'
 import './Footer.css'
 
-const Footer = ({ className }) => {
+const Footer = ({ className = '' }) => {
   return (
     <footer className={`footer ${className}`}>
       <div className='footerFaq'>

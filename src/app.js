@@ -9,6 +9,7 @@ import Mars from './Projects/Mars/Mars'
 import MoonBase from './Projects/MoonBase/MoonBase'
 import Flight from './Projects/Flight/Flight'
 import FAQ from './FAQ/FAQ'
+import Contact from './Contact/Contact'
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path='/moonBase' element={<MoonBase />}></Route>
         <Route path='/flight' element={<Flight />}></Route>
         <Route path='/faq' element={<FAQ />}></Route>
+        <Route path='/contact' element={<Contact />}></Route>
       </Routes>
     </BrowserRouter>
   )
