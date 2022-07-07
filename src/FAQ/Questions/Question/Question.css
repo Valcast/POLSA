@@ -1,0 +1,15 @@
+.question {
+  margin-top: 80px;
+  margin-left: 40px;
+  max-width: 120ch;
+}
+
+.questionHeader {
+  line-height: 1.5;
+}
+
+.questionAnswer {
+  margin-top: 40px;
+  margin-left: 40px;
+  line-height: 1.5;
+}

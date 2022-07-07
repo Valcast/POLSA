@@ -34,12 +34,6 @@
   font-family: var(--roboto);
 }
 
-.contactButtons {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-
 .contactInput {
   width: 480px;
   height: 70px;

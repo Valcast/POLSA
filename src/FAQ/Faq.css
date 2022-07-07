@@ -1,0 +1,41 @@
+.faq {
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.faqQuestions {
+  padding-top: 220px;
+  padding-left: 80px;
+}
+
+.faqSearchOptions {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.faqSearchOptionsText {
+  font-family: var(--roboto);
+}
+
+.faqQuestionNotFound {
+  padding-top: 80px;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.faqQuestionNotFoundDescription {
+  font-size: 16px;
+  font-family: var(--roboto);
+}
+
+.searchFaq {
+  padding-left: 0px;
+  transform: scale(1.1);
+}
