@@ -1,0 +1,27 @@
+.upcomingEvent {
+  display: flex;
+  gap: 40px;
+  margin-top: 120px;
+}
+
+.upcomingEventReversed {
+  flex-direction: row-reverse;
+}
+
+.upcomingEventText {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.upcomingEventDate {
+  font-family: var(--exo);
+  font-size: 12px;
+}
+
+.upcomingEventDescription {
+  max-width: 100ch;
+  line-height: 1.5;
+  font-family: var(--roboto);
+  text-align: justify;
+}

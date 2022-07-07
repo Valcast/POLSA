@@ -1,0 +1,27 @@
+.recentEvent {
+  position: relative;
+  height: 100vh;
+}
+
+.recentEventHero {
+  position: absolute;
+  object-fit: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.recentEventText {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 40px;
+  max-width: 100ch;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.recentEventTextDescription {
+  line-height: 1.5;
+  font-family: var(--roboto);
+}

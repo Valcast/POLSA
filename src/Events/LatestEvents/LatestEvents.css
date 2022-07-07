@@ -1,0 +1,22 @@
+.latestEventsList {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 80px;
+  margin-top: 80px;
+}
+.latestEventsHeader {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.eventsTurningLines {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  margin-top: 120px;
+  transform: scale(1, -1);
+}
+
+.eventsTurningLines .eventsTurningLinesReversed {
+  transform: scale(-1, 1);
+}

@@ -1,0 +1,27 @@
+.latestEvent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 460px;
+  align-items: center;
+}
+
+.latestEventDate {
+  font-family: var(--exo);
+  font-size: 12px;
+  align-self: flex-start;
+}
+
+.latestEventDescription {
+  line-height: 1.5;
+  font-family: var(--roboto);
+  text-align: justify;
+}
+
+.latestEventHeader {
+  align-self: center;
+}
+
+.latestEvent:last-child {
+  align-self: center;
+}
