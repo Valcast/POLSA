@@ -8,7 +8,7 @@ import eventsHeroWebp from '../../images/eventsHero.webp'
 
 import './RecentEvent.css'
 
-const RecentEvent = () => {
+const RecentEvent = ({ events = [{ date: '' }] }) => {
   return (
     <section className='recentEvent'>
       <Image
@@ -18,9 +18,12 @@ const RecentEvent = () => {
         className='recentEventHero'
       />
       <div className='recentEventText'>
-        <Header text='Geothermal industry in outer colonies' />
+        <span className='recentEventDate'>
+          {events[0].date.slice(0, 10).replaceAll('-', '.')}
+        </span>
+        <Header text={events[0].title} />
         <Description
-          text='Nam cursus luctus nibh et mollis. Phasellus in aliquet velit, eleifend lobortis tellus. Aliquam erat volutpat. Praesent sollicitudin congue augue pulvinar lacinia. Sed eget vulputate leo. Vivamus consequat sem urna, vitae cursus ipsum placerat in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in augue nibh. Sed viverra sit amet ligula vitae pretium.'
+          text={events[0].short_desc}
           className='recentEventTextDescription'
         />
         <Button text='Check More' />

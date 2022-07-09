@@ -9,6 +9,10 @@
   height: 100vh;
   width: 100vw;
 }
+.recentEventDate {
+  font-family: var(--exo);
+  font-size: 12px;
+}
 
 .recentEventText {
   position: absolute;
