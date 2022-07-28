@@ -1,0 +1,56 @@
+.home {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeBackground {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  z-index: -1;
+  filter: brightness(75%);
+}
+
+.heroWrapper {
+  text-align: center;
+  padding: 120px 40px 10vw 40px;
+}
+
+.heroHeader {
+  font-family: var(--exo);
+  font-size: 72px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+@media screen and (max-width: 910px) {
+  .heroHeader {
+    font-size: 48px;
+  }
+  .heroDescription {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .heroDescription {
+    font-size: 12px;
+  }
+}
+
+.heroDescription {
+  font-family: var(--roboto);
+  font-style: italic;
+  font-weight: 300;
+  max-width: 100ch;
+  padding-top: 40px;
+  line-height: 2;
+}

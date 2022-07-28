@@ -1,12 +1,14 @@
 const { MongoClient, ServerApiVersion } = require('mongodb')
 const uri =
-  'mongodb+srv://Valcast:MlsP8Wrl66ge@polsa.ompgi6m.mongodb.net/?retryWrites=true&w=majority'
+  'mongodb+srv://Client:8rokOyaCroRe@polsa.ompgi6m.mongodb.net/?retryWrites=true&w=majority'
 
 const client = new MongoClient(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   serverApi: ServerApiVersion.v1,
 })
+
+const currentDate = new Date()
 
 exports.handler = async () => {
   try {
@@ -19,12 +21,12 @@ exports.handler = async () => {
       .toArray()
 
     const latestEvents = events
-      .filter(event => event.date < new Date())
+      .filter(event => event.date < currentDate)
       .sort((firstEvent, secondEvent) => secondEvent.date - firstEvent.date)
       .slice(0, 3)
 
     const upcomingEvents = events
-      .filter(event => event.date > new Date())
+      .filter(event => event.date > currentDate)
       .sort((firstEvent, secondEvent) => firstEvent.date - secondEvent.date)
       .slice(0, 3)
 

@@ -6,7 +6,7 @@
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "format:check": "prettier --check \"src/**/*.{js,jsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
-    "dev": "parcel --port 1234 --hmr-port 1236 src/index.html && parcel watch src/index.html",
+    "dev": "parcel src/index.html --no-cache",
     "build": "parcel build src/index.html --dist-dir dist"
   },
   "keywords": [],
@@ -28,8 +28,5 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-router-dom": "^6.3.0"
-  },
-  "browserslist": [
-    "last 2 Chrome versions"
-  ]
+  }
 }
