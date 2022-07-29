@@ -1,18 +1,30 @@
-import './Home.css'
 import Navbar from '../../Reusable Components/Navbar/Navbar'
 import Button from '../../Reusable Components/Button/Button'
+import Image from '../../Reusable Components/Image/Image'
+import home from '../../images/home.jpg'
+import homeWebp from '../../images/home.webp'
+
+import './Home.css'
 
 const Homepage = () => {
   return (
     <div className='home'>
       <Navbar />
-      <video className='homeBackground' autoPlay muted loop>
-        <source
-          src={new URL('home-background.mp4', import.meta.url)}
-          type='video/mp4'
-        />
-        <track default kind='captions' />
-      </video>
+      {navigator.connection.effectiveType == '4g' ? (
+        <video className='homeBackgroundVideo' autoPlay muted loop>
+          <source
+            src={new URL('home-background.mp4', import.meta.url)}
+            type='video/mp4'
+          />
+          <track default kind='captions' />
+        </video>
+      ) : (
+        <Image
+          className='homeBackground'
+          src={home}
+          srcWebp={homeWebp}
+          alt='Home Image'></Image>
+      )}
 
       <header className='heroWrapper'>
         <h1 className='heroHeader'>POLAND CAN INTO SPACE</h1>

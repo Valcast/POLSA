@@ -9,7 +9,7 @@
   align-items: center;
 }
 
-.homeBackground {
+.homeBackgroundVideo {
   min-width: 100%;
   min-height: 100%;
   width: auto;
@@ -17,6 +17,14 @@
   position: absolute;
   z-index: -1;
   filter: brightness(75%);
+}
+
+.homeBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: -1;
 }
 
 .heroWrapper {
