@@ -13,8 +13,8 @@ const Events = () => {
   const [data, setData] = useState([])
 
   const fetchEventsData = async () => {
-    const data = await (await fetch('/.netlify/functions/getEventsData')).json()
-    console.log(data)
+    const res = await fetch('/.netlify/functions/getEventsData')
+    const data = await res.json()
     setData(data)
   }
 
