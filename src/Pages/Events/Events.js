@@ -13,8 +13,15 @@ const Events = () => {
   const [data, setData] = useState([])
 
   const fetchEventsData = async () => {
+    const sessionData = sessionStorage.getItem('data')
+    if (sessionData) {
+      setData(JSON.parse(sessionData))
+
+      return
+    }
     const res = await fetch('/.netlify/functions/getEventsData')
     const data = await res.json()
+    sessionStorage.setItem('data', JSON.stringify(data))
     setData(data)
   }
 
