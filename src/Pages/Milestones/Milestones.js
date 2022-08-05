@@ -23,6 +23,7 @@ const Milestones = () => {
         alt='Timelines Background'
         className='timelineBackground'
         ref={timelineBackgroundDiv}
+        eager
       />
       <div
         className='timeline'

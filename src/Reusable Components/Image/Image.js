@@ -2,7 +2,7 @@ import React from 'react'
 
 // eslint-disable-next-line react/display-name
 const Image = React.forwardRef(
-  ({ src, srcWebp, alt, className, width, height }, ref) => {
+  ({ src, srcWebp, alt, className, width, height, eager }, ref) => {
     return (
       <picture>
         <source type='image/webp' srcSet={srcWebp}></source>
@@ -13,7 +13,7 @@ const Image = React.forwardRef(
           width={width}
           height={height}
           ref={ref}
-          loading='lazy'></img>
+          loading={eager ? 'eager' : 'lazy'}></img>
       </picture>
     )
   }
