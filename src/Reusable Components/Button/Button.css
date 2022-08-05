@@ -10,7 +10,8 @@
   transition: background-color 0.5s, color 0.5s, transform 0.5s;
 }
 
-.link:hover {
+.link:hover,
+.link:focus {
   cursor: pointer;
   background-color: white;
   color: black;

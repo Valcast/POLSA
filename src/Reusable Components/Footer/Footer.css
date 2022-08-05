@@ -36,7 +36,8 @@
   font-size: 14px;
 }
 
-.footerMenuItem:hover {
+.footerMenuItem:hover,
+.footerMenuItem:focus  {
   cursor: pointer;
   font-weight: bold;
 }

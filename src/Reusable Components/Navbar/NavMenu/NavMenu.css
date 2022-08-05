@@ -23,11 +23,13 @@
   transition: transform 0.5s ease-in-out;
 }
 
-.navLink:hover {
+.navLink:hover,
+.navLink:focus {
   cursor: pointer;
 }
 
-.navLink:hover::after {
+.navLink:hover::after,
+.navLink:focus::after {
   transform: scaleX(1);
 }
 

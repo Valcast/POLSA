@@ -1,0 +1,51 @@
+.timelineProject {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transition: top 0.5s;
+  top: 30%;
+  width: 450px;
+}
+
+.timelineHeader {
+  align-self: center;
+}
+
+.timelineDescription {
+  max-width: 100ch;
+  padding: 20px 0;
+  text-align: justify;
+  font-family: var(--roboto);
+  line-height: 1.5;
+}
+
+.timelineYear {
+  margin: 100px 0;
+  font-size: 72px;
+  font-family: var(--exo);
+  transition: margin 0.5s;
+}
+
+.timelineReversed {
+  flex-direction: column-reverse;
+  top: 20%;
+  transition: top 0.5s;
+}
+
+.timelineTextReversed {
+  padding-top: 30px;
+}
+
+.timelineProject:hover, .timelineProject:focus {
+  top: 26%;
+  cursor: pointer;
+}
+
+.timelineReversed:hover, .timelineReversed:focus {
+  top: 15%;
+}
+
+.timelineProject:hover .timelineYear, .timelineProject:focus .timelineYear {
+  margin: 140px 0;
+}

@@ -7,12 +7,14 @@ import Flight from './Pages/Projects/Flight/Flight'
 import FAQ from './Pages/FAQ/FAQ'
 import Contact from './Pages/Contact/Contact'
 import Events from './Pages/Events/Events'
+import Milestones from './Pages/Milestones/Milestones'
 
 import './global.css'
 
 import React from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 
 const App = () => {
   return (
@@ -27,6 +29,7 @@ const App = () => {
         <Route path='/faq' element={<FAQ />}></Route>
         <Route path='/contact' element={<Contact />}></Route>
         <Route path='/events' element={<Events />}></Route>
+        <Route path='/milestones' element={<Milestones />}></Route>
       </Routes>
     </BrowserRouter>
   )

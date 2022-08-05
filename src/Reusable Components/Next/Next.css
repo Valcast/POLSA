@@ -15,7 +15,8 @@
   transition: transform 0.5s;
 }
 
-.next:hover > svg {
+.next:hover > svg,
+.next:focus > svg {
   transform: translateX(-5px);
 }
 
