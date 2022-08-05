@@ -36,7 +36,7 @@ const Homepage = () => {
         </p>
       </header>
 
-      <Button text='Milestones' />
+      <Button text='Milestones' to='milestones' />
     </div>
   )
 }

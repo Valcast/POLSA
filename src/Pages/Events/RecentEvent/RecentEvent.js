@@ -1,9 +1,6 @@
 import Button from '../../../Reusable Components/Button/Button'
 import Image from '../../../Reusable Components/Image/Image'
 
-import imageJPG from '../../../images/eventsHero.jpg'
-import imageWEBP from '../../../images/eventsHero.webp'
-
 import './RecentEvent.css'
 
 const RecentEvent = ({ event = [{ date: '' }] }) => {
@@ -12,8 +9,8 @@ const RecentEvent = ({ event = [{ date: '' }] }) => {
       <Image
         alt='Events Hero'
         className='recentEventHero'
-        src={imageJPG}
-        srcWebp={imageWEBP}
+        src={event[0].imageJpg}
+        srcWebp={event[0].imageWebp}
       />
       <div className='recentEventText'>
         <span className='recentEventDate'>

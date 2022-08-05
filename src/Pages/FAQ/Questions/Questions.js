@@ -40,7 +40,7 @@ const Questions = () => {
             onKeyUp={keyupHandler}></input>
         </div>
         <span className='faqSearchOptionsText'>or</span>
-        <Button text='Write an own question' to='contact' />
+        <Button text='Write a question' to='contact' />
       </div>
 
       {filteredQuestions.map(question => {
@@ -53,11 +53,11 @@ const Questions = () => {
         )
       })}
       <div className='faqQuestionNotFound'>
-        <h2>Didn$apost find your question?</h2>
+        <h2>Didn't find your question?</h2>
         <p className='faqQuestionNotFoundDescription'>
           Create your own by our Contact Page{' '}
         </p>
-        <Button text='Write an own question' to='contact' />
+        <Button text='Write a question' to='contact' />
       </div>
     </>
   )

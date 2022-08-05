@@ -1,9 +1,6 @@
 import TurningLine from '../../../Reusable Components/TurningLine/TurningLine'
 import UpcomingEvent from './UpcomingEvent/UpcomingEvent'
 
-import event1image from '../../../images/eventsImages/event1image.jpg'
-import event1imageWebp from '../../../images/eventsImages/event1image.webp'
-
 import './UpcomingEvents.css'
 
 const UpcomingEvents = ({ events }) => {
@@ -19,8 +16,8 @@ const UpcomingEvents = ({ events }) => {
             ? ''
             : events[0].date.slice(0, 10).replaceAll('-', '.')
         }
-        src={event1image}
-        srcWebp={event1imageWebp}
+        src={typeof events == 'undefined' ? '' : events[0].imageJpg}
+        srcWebp={typeof events == 'undefined' ? '' : events[0].imageWebp}
         alt='Event 1 Image'
         reversed
       />
@@ -32,8 +29,8 @@ const UpcomingEvents = ({ events }) => {
             ? ''
             : events[1].date.slice(0, 10).replaceAll('-', '.')
         }
-        src={event1image}
-        srcWebp={event1imageWebp}
+        src={typeof events == 'undefined' ? '' : events[1].imageJpg}
+        srcWebp={typeof events == 'undefined' ? '' : events[1].imageWebp}
         alt='Event 1 Image'
       />
     </section>
